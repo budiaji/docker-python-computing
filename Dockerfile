@@ -1,12 +1,14 @@
 FROM ubuntu:16.04
 
+MAINTAINER Abdul Somat Budiaji "abdulbudiaji@gmail.com"
+
 RUN apt-get update && apt-get install -y \
         gcc g++ \
         python python-dev python-pip \
         gettext \
         mysql-client libmysqlclient-dev \
         sqlite3 \
-        --no-install-recommends && rm -rf /var/lib/apt/lists/*
+        --no-install-recommends
 
 RUN pip install --upgrade pip
 
@@ -16,17 +18,16 @@ RUN pip install setuptools==25.1.1
 # freetype and png is required by matplotlib
 RUN apt-get install -y \
         libpng12-dev libfreetype6-dev pkg-config \
-        --no-install-recommends && rm -rf /var/lib/apt/lists/*
+        --no-install-recommends
 
 # libxml and libxslt is required by newspaper
 RUN apt-get install -y \
         libxml2-dev libxslt1-dev \
-        --no-install-recommends && rm -rf /var/lib/apt/lists/*
+        --no-install-recommends
 
 # required by gdal
 RUN apt-get install -y \
-        libgdal-dev \
-        && rm -rf /var/lib/apt/lists/*
+        libgdal-dev
 
 RUN pip install numpy==1.11.0 #whl
 RUN pip install scipy==0.17.1 #whl
@@ -35,7 +36,7 @@ RUN pip install nltk==2.0.5 #source
 RUN pip install newspaper==0.0.9.8 #source
 
 # install gdal python binding
-RUN CPLUS_INCLUDE_PATH=/usr/include/gdal
+RUN export CPLUS_INCLUDE_PATH=/usr/include/gdal
 RUN export C_INCLUDE_PATH=/usr/include/gdal
 RUN pip install GDAL==1.11.2 #source
 
@@ -67,5 +68,6 @@ RUN pip install cassandra-driver==3.5.0 #source
 # install supervisor
 RUN pip install supervisor==3.3.0 #source
 
-# remove pip cache
+# clean up
 RUN rm -rf /root/.cache/pip
+RUN rm -rf /var/lib/apt/lists/*
