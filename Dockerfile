@@ -36,8 +36,8 @@ RUN pip install nltk==2.0.5 #source
 RUN pip install newspaper==0.0.9.8 #source
 
 # install gdal python binding
-RUN export CPLUS_INCLUDE_PATH=/usr/include/gdal
-RUN export C_INCLUDE_PATH=/usr/include/gdal
+ENV CPLUS_INCLUDE_PATH /usr/include/gdal
+ENV C_INCLUDE_PATH /usr/include/gdal
 RUN pip install GDAL==1.11.2 #source
 
 # install some tools
