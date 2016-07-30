@@ -1,0 +1,51 @@
+backports-abc==0.4 # with luigi
+beanstalkc==0.4.0 # independent
+beautifulsoup4==4.3.2 # with newspaper
+cassandra-drive==3.5.0 # independent
+certifi==2016.2.28 # with luigi
+cssselect==0.9.1 # with newspaper
+cyler==0.10.0 # with matplotlib
+Django==1.9.7 # independent
+djangorestframework==3.4.0 # independent
+docutils==0.12 # with luigi
+drfdocs==0.0.11 # independent
+feedfinder2==0.0.1 # with newspaper
+feedparser==5.1.3 # with newspaper
+futures==3.0.5
+GDAL==1.11.2 # independent
+googlemaps==2.4.3 # independent
+gunicorn==19.6.0 #independent
+itsdangerous==0.24 # independent
+jieba==0.35 # with newspaper
+lockfile==0.12.2 # with luigi
+luigi==2.2.0 # independent
+lxml==3.3.5 # with newspaper
+Markdown==2.6.6 # independent
+matplotlib==1.5.1 # independent
+meld3==1.0.2 # with supervisor
+mysqlclient==1.3.7 # independent
+newspaper==0.0.9.8 # independent
+nltk==2.0.5 # independent
+nose==1.3.7 # independent
+numpy==1.11.0 # independent
+path.py==8.2.1 # independent
+Pillow==3.2.0 # with newspaper
+pyparsing==2.1.5 # with matplotlib
+python-daemon==2.1.1 # with luigi
+python-dateutil==2.4.0 # with matplotlib
+python-http-client==2.1.1 # with sendgrid
+pytz==2016.4 # with matplotlib
+PyYAML==3.11 # with nltk
+reportlab==3.3.0 # independent
+requests==2.9.1 # with newspaper
+schedule==0.3.2 # independent
+scipy==0.17.1 # independent
+sendgrid==3.0.0 # independent
+singledispatch==3.4.0.3 # with luigi
+supervisor==3.3.0 # independent
+six==1.7.3 # with matplotlib
+tldextract==1.5.1 # with newspaper
+tornado==4.4.1 # with luigi
+whitenoise==3.2 # independent
+xlrd==1.0.0 # independent
+xlwt==1.1.2 # independent
