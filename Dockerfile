@@ -64,6 +64,7 @@ RUN pip install Markdown==2.6.6 #source
 RUN pip install gunicorn==19.6.0 #whl
 RUN pip install luigi==2.2.0 #source
 RUN pip install cassandra-driver==3.5.0 #source
+RUN pip install reportlab==3.3.0 #source
 
 # install supervisor
 RUN pip install supervisor==3.3.0 #source
