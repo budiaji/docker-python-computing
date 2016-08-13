@@ -69,6 +69,11 @@ RUN pip install reportlab==3.3.0 #source
 # install supervisor
 RUN pip install supervisor==3.3.0 #source
 
+# install frequently used locale
+RUN locale-gen id_ID.utf8
+RUN locale-gen en_US.utf8
+RUN update-locale
+
 # clean up
 RUN rm -rf /root/.cache/pip
 RUN rm -rf /var/lib/apt/lists/*
