@@ -50,6 +50,7 @@ RUN pip install xlrd==1.0.0 #source
 RUN pip install xlwt==1.1.2 #whl
 RUN pip install schedule==0.3.2 #source
 RUN pip install itsdangerous==0.24 #source
+RUN pip install psutil==4.3.0 #source
 
 # install cython
 RUN pip install Cython==0.24.1 #whl
