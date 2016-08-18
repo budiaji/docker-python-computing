@@ -51,6 +51,8 @@ RUN pip install xlwt==1.1.2 #whl
 RUN pip install schedule==0.3.2 #source
 RUN pip install itsdangerous==0.24 #source
 RUN pip install psutil==4.3.0 #source
+RUN pip install pika==0.10.0 #whl
+RUN pip install minio==2.0.0 #whl
 
 # install cython
 RUN pip install Cython==0.24.1 #whl
